@@ -1,0 +1,13 @@
+{
+    "info":{
+        "num_products":3,
+        "errors":[],
+        "messages":[]
+    },
+
+    "products": [
+        {"name": "FOLIO100", "owner":"Lalo Landa", "commercial_amount":10000},
+        {"name": "FOLIO200", "owner":"Pedro Perez", "commercial_amount":30000},
+        {"name": "FOLIO300", "owner":"Ramiro Ramirez", "commercial_amount":20000}
+    ]
+}
