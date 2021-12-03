@@ -1,0 +1,82 @@
+{
+    "info": {
+        "num_events": 3,
+        "errors": [],
+        "messages": []
+    },
+    "events": [
+        {
+            "type": "create",
+            "product_id": "FOLIO100",
+            "vals": {
+                "owner": "Lalo Landa",
+                "commercial_amount": 10000
+            }
+        },
+        {
+            "type": "create",
+            "product_id": "FOLIO200",
+            "vals": {
+                "owner": "Pepe Pecas",
+                "commercial_amount": 20000
+            }
+        },
+        {
+            "type": "create",
+            "product_id": "FOLIO300",
+            "vals": {
+                "owner": "Ramiro Ramirez",
+                "commercial_amount": 30000
+            }
+        },
+        {
+            "type": "update",
+            "product_id": "FOLIO200",
+            "vals": {
+                "owner": "Pedro Perez",
+                "commercial_amount": 60000
+            }
+        },
+        {
+            "type": "split",
+            "product_id": "FOLIO300",
+            "product_childs": [
+                {
+                    "type": "create",
+                    "product_id": "FOLIO300A",
+                    "vals": {
+                        "owner": "Pedro Perez JR",
+                        "commercial_amount": 10000
+                    }
+                },
+                {
+                    "type": "create",
+                    "product_id": "FOLIO300B",
+                    "vals": {
+                        "owner": "Pedro Perez II",
+                        "commercial_amount": 10000
+                    }
+                }
+            ]
+        },
+        {
+            "type": "join",
+            "product_ids": [
+                "FOLIO100",
+                "FOLIO200"
+            ],
+            "product_result": {
+                "type": "create",
+                "product_id": "FOLIO12000",
+                "vals": {
+                    "owner": "Juan Perez",
+                    "commercial_amount": 120000
+                }
+            }
+        },
+        {
+            "type": "delete",
+            "product_id": "FOLIO300B"
+        }
+    ]
+}
